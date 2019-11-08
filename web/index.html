@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        .log {
+            border: 1px solid;
+            border-radius: 10px;
+            background: linear-gradient(top, #423FA4 0%, #751C75 100%);
+            background: linear-gradient(to bottom, #423FA4 0%, #751C75 100%);
+            width: 100%;
+            height: 95%;
+        
+            margin-top: 1%;
+        }
+        #log:hover, #reg:hover { 
+  background-color: white;
+  color:black;
+}
+        .off {
+            margin-top: 30%;
+        }
+
+        .regoff {
+            margin-top: 10%;        
+        }
+        #log, #reg
+        {
+            color: aliceblue;
+            text-align: center;
+            display:inline-block;
+            border-radius: 10px;
+            border:1px ;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 5%;
+            margin-top:5%;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4">
+            <div class="log">
+                    
+                        
+                            <div id="log" class="active">Login</div>
+                            <div id ="reg">Register</div>
+                        
+
+                <div class="signin">
+                    <div class="off">
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-5 col-md-6 col-md-offset-6" style="color:white">
+                                LOG IN
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-3 align-middle">
+
+                            <input type="text" placeholder="username" id="user1">
+
+
+                            <input type="password" placeholder="password" id ="pwd">
+
+
+                            <div class="row">
+                                <div class="col-lg-3 col-lg-offset-3">
+                                        <button id="login_btn" >Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- REGISTER -->
+
+
+                <div class="register">
+
+                    <div class="regoff">
+                        <div class="row">
+                            <div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-6" style="color:white">
+                                Register
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-3">
+
+                            <input type="text" placeholder="Name" id="name">
+                            <input type="email" placeholder="Enter your e-mail" id="email">
+                            <input type="email" placeholder="Enter your Phone No." id="phone">
+                            <input type="text" placeholder="Enter a Username" id="user">
+                            <input type="password" placeholder="Enter your password" id="pass">
+
+
+
+                            <div class="row">
+                                <div class="col-lg-5 col-lg-offset-2">
+                                    <button onclick="validateReg()" id="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  <script src="Assets/js/signjs.js" type="text/javascript"></script>
+</body>
+
+</html>
